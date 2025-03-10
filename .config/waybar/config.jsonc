@@ -1,0 +1,85 @@
+// -*- mode: jsonc -*-
+{
+  // "layer": "top", // Waybar at top layer
+  // "position": "bottom", // Waybar position (top|bottom|left|right)
+  "height": 30, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+  "spacing": 4, // Gaps between modules (4px)
+  // Choose the order of the modules
+  "modules-left": ["clock"],
+  "modules-center": ["hyprland/workspaces", "hyprland/window"],
+  "modules-right": [
+    "pulseaudio",
+    "bluetooth",
+    "hyprland/language",
+    "battery",
+    "tray",
+    "custom/power",
+  ],
+  "hyprland/workspaces": {
+    "format": "{icon} {windows}",
+    "format-icons": {
+      "active": "",
+      "urgent": "",
+      "focused": "",
+      "default": "",
+    },
+    // "window-rewrite-default": "",
+    // "window-rewrite": {
+    //   "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
+    //   "title<Module: Hyprland*>": "", // Windows whose classes are "firefox"
+    //   "class<kitty>": "", // Windows that contain "foot" in either class or title. For optimization reasons, it will only match against a title if at least one other window explicitly matches against a title.
+    //   "code": "󰨞",
+    // },
+    "persistent-workspaces": {
+      "*": [1, 2, 3, 4, 5],
+    },
+  },
+  "hyprland/window": {
+    "format": " ",
+  },
+  "clock": {
+    "format": "  -> {:%H:%M  󰃯 -> %d-%m-%Y }",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{}",
+  },
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "",
+    "on-click": "pavucontrol",
+  },
+  "bluetooth": {
+    "format-on": "󰂯",
+    "format-off": "󰂲",
+    "format-disabled": "󰂲",
+    "on-click": "blueberry",
+  },
+  "hyprland/language": {
+    "format": "{short}",
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{icon}",
+    "format-full": "{icon}",
+    "format-plugged": "",
+    "format-icons": ["", "", "", "", ""],
+  },
+  "tray": {
+    "spacing": 10,
+  },
+  "custom/power": {
+    "format": "⏻ ",
+    "tooltip": false,
+    "menu": "on-click",
+    "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+    "menu-actions": {
+      "shutdown": "shutdown",
+      "reboot": "reboot",
+      "suspend": "systemctl suspend",
+      "hibernate": "systemctl hibernate",
+    },
+  },
+}
