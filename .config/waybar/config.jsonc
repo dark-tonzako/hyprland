@@ -6,8 +6,13 @@
   // "width": 1280, // Waybar width
   "spacing": 4, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": ["clock"],
-  "modules-center": ["hyprland/workspaces", "hyprland/window"],
+  "modules-left": [
+    "clock"
+  ],
+  "modules-center": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
   "modules-right": [
     "pulseaudio",
     "bluetooth",
@@ -32,7 +37,13 @@
     //   "code": "󰨞",
     // },
     "persistent-workspaces": {
-      "*": [1, 2, 3, 4, 5],
+      "*": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
     },
   },
   "hyprland/window": {
@@ -65,7 +76,13 @@
     "format": "{icon}",
     "format-full": "{icon}",
     "format-plugged": "",
-    "format-icons": ["", "", "", "", ""],
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
   },
   "tray": {
     "spacing": 10,
@@ -73,13 +90,14 @@
   "custom/power": {
     "format": "⏻ ",
     "tooltip": false,
-    "menu": "on-click",
-    "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-    "menu-actions": {
-      "shutdown": "shutdown",
-      "reboot": "reboot",
-      "suspend": "systemctl suspend",
-      "hibernate": "systemctl hibernate",
-    },
+    // "menu": "on-click",
+    // "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+    // "menu-actions": {
+    //   "shutdown": "shutdown",
+    //   "reboot": "reboot",
+    //   "suspend": "systemctl suspend",
+    //   "hibernate": "systemctl hibernate",
+    "on-click": "wlogout",
   },
+},
 }
