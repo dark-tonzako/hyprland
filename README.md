@@ -15,6 +15,6 @@
 
 <!----------------------------------{ Images }--------------------------------->
 
-[Preview A]: (README/sc1.png)
-[Preview B]: (README/sc2.png)
-[Preview C]: (README/sc3.png)
+[Preview A]:(README/sc1.png)
+[Preview B]:(README/sc2.png)
+[Preview C]:(README/sc3.png)
