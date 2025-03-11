@@ -1,8 +1,13 @@
 <div align = center>
+  
 ![Hyprland logo](README/Hyprland.webp)
+
 </div>
+
 <br>
+
 # How it looks
+
 <br>
 
 ![Preview A]
