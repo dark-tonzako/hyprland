@@ -1,6 +1,8 @@
+<div align = center>
 ![Hyprland logo](README/Hyprland.webp)
-
-###How in looks
+</div>
+<br>
+# How it looks
 <br>
 
 ![Preview A]
