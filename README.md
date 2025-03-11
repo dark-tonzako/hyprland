@@ -70,6 +70,43 @@ yay -S candy-icons-git
 yay -S wlogout
 ```
 
+<br>
+
+4. Set up zsh :wrench:
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+
+```
+Find the line with plugins=(...) in the ~/ file.zshrc and add the names of the plugins
+```
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+```
+
+<br>
+
+5. Set up neovim :page_with_curl:
+   - I use the [AstroNvim](https://astronvim.com/) framework 
+```bash
+git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
+rm -rf ~/.config/nvim/.git
+nvim
+```
+
+<br>
+
+6. Set GTK theme :bird:
+```bash
+nwg-look
+```
+Choose a theme **Matherial Dark**
+
+### How to run :ghost:
+
+I don't use display managers, so I just write **Hyprland**, but you can put an [sddm](https://github.com/sddm/sddm), for example, to automatically start Hyprland.
+
 
 
 <!----------------------------------{ Images }--------------------------------->
