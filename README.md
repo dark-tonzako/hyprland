@@ -16,5 +16,5 @@
 <!----------------------------------{ Images }--------------------------------->
 
 [Preview A]: https://github.com/dark-tonzako/hyprland/blob/main/README/sc1.png
-[Preview B](README/sc2.png)
-[Preview C](README/sc3.png)
+[Preview B]: https://github.com/dark-tonzako/hyprland/blob/main/README/sc2.png
+[Preview C]: https://github.com/dark-tonzako/hyprland/blob/main/README/sc3.png
